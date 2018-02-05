@@ -1,0 +1,374 @@
+/*---------mixin------------------*/
+@import url(clue.css);
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  position: relative;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100% !important;
+  overflow-x: hidden !important;
+  font-family: 'Open Sans', sans-serif !important; }
+
+input, textarea, select {
+  border: 0px;
+  outline: 0px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1); }
+
+input:focus, textarea:focus, select:focus {
+  border: 0px;
+  outline: 0px; }
+
+.body-left {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  position: relative; }
+  .body-left .logo {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    padding: 12px 0; }
+    .body-left .logo img {
+      width: 100%;
+      height: 100%; }
+  .body-left .pick-select {
+    height: 0;
+    overflow: hidden;
+    -moz-overflow: hidden;
+    -o-overflow: hidden;
+    -webkit-overflow: hidden;
+    -ms-overflow: hidden; }
+  .body-left #pick:checked + .pick-select {
+    height: auto; }
+
+/*this right mode side*/
+.rigth-body {
+  border-top: 1px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  border-left: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 2px -2px 26px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px -2px 26px 3px rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 2px -2px 26px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 2px -2px 26px 3px rgba(0, 0, 0, 0.1);
+  -ms-box-shadow: 2px -2px 26px 3px rgba(0, 0, 0, 0.1);
+  background: #F7F5FA;
+  -webkit-border-radius: 0px 0px 0px 2px;
+  -moz-border-radius: 0px 0px 0px 2px;
+  -ms-border-radius: 0px 0px 0px 2px;
+  -o-border-radius: 0px 0px 0px 2px;
+  border-radius: 0px 0px 0px 2px;
+  border-top: 0px;
+  border-left: .5px solid #EDEBF0;
+  border-bottom: .5px solid #FCFAFF; }
+  .rigth-body .dropdown-right {
+    padding-top: 110px;
+    padding-bottom: 20px; }
+  .rigth-body .right-content {
+    position: relative;
+    -moz-position: relative;
+    -o-position: relative;
+    -ms-position: relative;
+    -webkit-position: relative;
+    top: 0;
+    right: 0;
+    height: 100%;
+    min-width: 100%;
+    width: 100%;
+    min-height: 100%;
+    max-height: 100%; }
+    .rigth-body .right-content .selection-drop label {
+      position: absolute;
+      -moz-position: absolute;
+      -o-position: absolute;
+      -ms-position: absolute;
+      -webkit-position: absolute;
+      float: right;
+      right: 0;
+      margin-right: 25px;
+      top: 5px;
+      color: #7C4598;
+      font-size: 13px; }
+    .rigth-body .right-content .right-mode-overlay {
+      display: block; }
+    .rigth-body .right-content *[disabled] {
+      display: block;
+      background: rgba(194, 194, 194, 0.1); }
+    .rigth-body .right-content textarea {
+      overflow: hidden;
+      min-width: 100%;
+      max-width: 100%;
+      max-height: 100%;
+      height: 100%; }
+    .rigth-body .right-content .selection {
+      appearance: none;
+      -moz-appearance: none;
+      -o-appearance: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      cursor: pointer; }
+    .rigth-body .right-content .survei-name {
+      border-radius: 30px; }
+
+.Logout-beta {
+  display: none; }
+
+.action-button {
+  min-width: 120px;
+  padding: 0px 10px 0 15px;
+  float: left; }
+  .action-button .button {
+    min-width: 120px;
+    width: 100%;
+    max-width: 120px; }
+  .action-button i {
+    font-size: 12px; }
+
+/*-----checkbox styling----*/
+.input-check {
+  position: absolute;
+  -moz-position: absolute;
+  -o-position: absolute;
+  -ms-position: absolute;
+  -webkit-position: absolute;
+  right: 0px;
+  display: none; }
+  .input-check input {
+    opacity: 0;
+    position: absolute; }
+  .input-check span {
+    background-color: #7C4598;
+    padding: 0px 5px;
+    display: block;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    overflow: hidden;
+    -moz-overflow: hidden;
+    -o-overflow: hidden;
+    -webkit-overflow: hidden;
+    -ms-overflow: hidden;
+    position: absolute;
+    -moz-position: absolute;
+    -o-position: absolute;
+    -ms-position: absolute;
+    -webkit-position: absolute;
+    right: 0; }
+    .input-check span i {
+      font-size: 11px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      top: 1.5px;
+      height: 7px;
+      width: 7px;
+      overflow: hidden;
+      -moz-overflow: hidden;
+      -o-overflow: hidden;
+      -webkit-overflow: hidden;
+      -ms-overflow: hidden;
+      max-height: 7px;
+      max-width: 7px;
+      cursor: pointer;
+      background: transparent;
+      right: 4.2px; }
+  .input-check input:hover + span {
+    background-color: #6E3D87; }
+  .input-check input:checked + span {
+    opacity: 1;
+    background-color: #fff;
+    transition: .1s ease; }
+  .input-check input:checked + span i {
+    opacity: 1;
+    color: #7C4598;
+    transition: .1s ease; }
+
+/*----radio button styling----*/
+.input-radio {
+  position: absolute;
+  -moz-position: absolute;
+  -o-position: absolute;
+  -ms-position: absolute;
+  -webkit-position: absolute;
+  right: 0;
+  display: block; }
+  .input-radio input {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    -moz-position: absolute;
+    -o-position: absolute;
+    -ms-position: absolute;
+    -webkit-position: absolute; }
+  .input-radio span {
+    background-color: #7C4598;
+    padding: 5px;
+    display: block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    top: -8px; }
+    .input-radio span strong {
+      background-color: #fff;
+      height: 8px;
+      width: 8px;
+      display: block;
+      cursor: pointer;
+      opacity: 1;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-transition: 0.1s ease-all;
+      -moz-transition: 0.1s ease-all;
+      -o-transition: 0.1s ease-all;
+      -ms-transition: 0.1s ease-all;
+      transition: 0.1s ease-all;
+      cursor: pointer; }
+  .input-radio input:hover + span {
+    background-color: #6E3D87;
+    cursor: pointer; }
+  .input-radio input:checked + span {
+    opacity: 1;
+    background-color: #fff;
+    -webkit-transition: 0.1s ease-all;
+    -moz-transition: 0.1s ease-all;
+    -o-transition: 0.1s ease-all;
+    -ms-transition: 0.1s ease-all;
+    transition: 0.1s ease-all; }
+  .input-radio input:checked + span strong {
+    opacity: 1;
+    background-color: #7C4598;
+    transition: .1s ease;
+    cursor: pointer; }
+
+.design-survey-option {
+  margin: 0px;
+  padding: 0px;
+  width: 100%; }
+
+#answer-5, #answer-6 {
+  display: none; }
+
+.new-2, .modif, .publish, .checkbox-publish, #answer-5, #answer-6, .answer-6, .answer-5, .check, .radio, .newquestion {
+  display: none; }
+
+.input[disabled="disabled"] {
+  background: rgba(0, 0, 0, 0.01); }
+
+@media screen and (max-width: 767px) {
+  .survey-select {
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6); }
+
+  .design-survey-option {
+    margin: 0px;
+    padding: 0 10%; }
+
+  .logo {
+    max-height: auto;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0; }
+    .logo img {
+      width: auto;
+      min-width: auto;
+      height: auto;
+      overflow: auto;
+      -moz-overflow: auto;
+      -o-overflow: auto;
+      -webkit-overflow: auto;
+      -ms-overflow: auto;
+      max-width: 40%;
+      max-width: auto;
+      display: flex;
+      margin: 0 auto;
+      background-color: red !important; }
+
+  .rigth-body {
+    box-shadow: -9px 3px 32px -5px rgba(0, 0, 0, 0);
+    -moz-box-shadow: -9px 3px 32px -5px rgba(0, 0, 0, 0);
+    -o-box-shadow: -9px 3px 32px -5px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: -9px 3px 32px -5px rgba(0, 0, 0, 0);
+    -ms-box-shadow: -9px 3px 32px -5px rgba(0, 0, 0, 0); }
+    .rigth-body .dropdown-right {
+      padding-top: 0px;
+      padding-bottom: 20px; }
+
+  .survey-select {
+    background: #F7F5FA;
+    width: 100%;
+    padding: 20px 0 0 0;
+    margin: 0; }
+
+  .Logout-alpha {
+    display: none; }
+
+  .Logout-beta {
+    display: block; } }
+@media screen and (max-width: 433px) {
+  .rigth-body {
+    box-shadow: -9px 3px 32px -5px rgba(0, 0, 0, 0);
+    -moz-box-shadow: -9px 3px 32px -5px rgba(0, 0, 0, 0);
+    -o-box-shadow: -9px 3px 32px -5px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: -9px 3px 32px -5px rgba(0, 0, 0, 0);
+    -ms-box-shadow: -9px 3px 32px -5px rgba(0, 0, 0, 0); }
+    .rigth-body .button-option button {
+      min-width: 190px;
+      width: 100%;
+      max-width: 190%; } }
+@media screen and (max-width: 400px) {
+  .action-button {
+    min-width: 100px;
+    padding: 0px 10px 0 15px;
+    float: left; }
+    .action-button .button {
+      min-width: 110px;
+      width: 100%;
+      max-width: 110px;
+      font-size: 12px; }
+      .action-button .button i {
+        font-size: 10px; } }
+@media screen and (max-width: 370px) {
+  .action-button {
+    min-width: 100px;
+    padding: 0px 10px 0 11px;
+    float: left; }
+    .action-button .button {
+      min-width: 100px;
+      width: 100%;
+      max-width: 100px;
+      font-size: 11px; }
+      .action-button .button i {
+        font-size: 10px; } }
+@media screen and (max-width: 355px) {
+  .action-button {
+    min-width: 92px;
+    padding: 0px 10px 0 15px;
+    float: left; }
+    .action-button .button {
+      min-width: 92px;
+      width: 100%;
+      max-width: 92px;
+      font-size: 10spx; }
+      .action-button .button i {
+        font-size: 9px; } }
+
+/*# sourceMappingURL=main.style.css.map */

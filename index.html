@@ -1,0 +1,321 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<title>STC survey</title>
+	<link rel="stylesheet" type="text/css" href="asset/css/main.style.min.css">
+	<link rel="icon" type="img/png" href="asset/img/stcready.png">	
+	<script type="text/javascript" src="asset/js/jquery.min.js"></script>
+	<script type="text/javascript" src="asset/js/bootstrap.min.js"></script>
+</head>
+<body> 
+	<!---start page----------------->
+	
+<section class="container-fluid">
+	<!---------------left side --------------->
+	<div class="content row bg-white pb-60">
+		<div class="col-lg-2 col-md-2 col-sm-3 col-xs-12 body-left  bg-white m-0 p-0"> 
+			<div class="logo pt-0 container-fluid m-0 p-0">
+				<img src="asset/img/Saudi-Telecom-Group-logo-1024x768.png">
+			</div>
+			<div class="survey-select container-fluid">
+				<div class="design-survey-option">
+				<button class="btn btn-violet-outline w-100 border-radius p-05 ov-h p-0 pl-0 pr-05" >
+					<label for="pick" class="pointer text-violet w-100 f-s-14 pull-left text-left pl-05">
+							Design survey
+					 <i class="ion-arrow-down-b pt-20 text-right pull-right f-s-12" style="margin-top:-17px;">
+					 </i>
+				</label>
+				</button>
+			</div>
+
+			<div class="pick-option ">
+				<input type="checkbox" name="pick" id="pick" class="hidden">
+				<ul class="pick-select w-100 design-survey-option">
+					<li class="list-false pt-10">
+					<button class="btn w-100 p-0 pt-05 pb-05" id="pick-one" >
+						<i class="ion-ios-plus-outline icon-left pull-left " style="margin-top: -4px;"></i>
+						<span class="text-icon-gray f-s-14 pl-05 pick-title pull-left text-left pl-05 ml-05">Pick one </span>
+					</button>
+					</li>
+					
+					<li class="list-false pt-10">
+					<button class="btn w-100 p-0 pt-05 pb-05" id="pick-pultiple">
+						<i class="ion-ios-plus-outline icon-left pull-left " style="margin-top: -4px;"></i>
+						<span class="text-icon-gray f-s-14 pl-05 pick-title pull-left text-left pl-05 ml-05">Pick Multiple </span>
+					</button>
+					</li>
+				</ul>
+			</div>
+
+				<div class="pt-10">
+					<button class="btn w-100 text-center btn-violet white border-radius Logout-alpha">Logout</button>
+				</div>
+			</div>
+
+		</div>
+
+<input type="checkbox" name="" id="pick-one-action" checked="" style="display: none;">
+<input type="checkbox" name="" id="pick-multiple-action" style="display: none;">
+<!--this right content -->
+
+	<div class="col-lg-10 col-md-10 col-sm-9 col-xs-12 m-0 p-0  rigth-body">	
+		<div class="right-content container-fluid-80 ">
+
+<!---this fo editing-->
+
+
+			  <!--end editing-->
+
+
+
+
+
+			<div style="" class="right-mode-overlay" id="right-mode-overlay">
+				<div style="" class="right-mode" id="right-mode">
+			<div class="dropdown-right ">
+				<div class="row">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 m-0 p-0 pl-15">
+						<label for="survei-name " class="f-s-14 text-violet">Survei name</label>
+					</div>
+					<div  class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+						<div class="selection-drop w-100">
+							<label class="ion-arrow-down-b " for="survey-name" style="cursor: pointer;">
+						</label>
+						<select id="survey-name" class="w-100 p-10 pt-05 pb-05  b-b selection ion-ios-plus-outline text-icon-gray input input-action">
+							<option class="text-icon-gray" value="#">Dropdown menu editable</option>
+							<option class="text-icon-gray" value="#">Dropdown menu editable one</option>
+							<option class="text-icon-gray" value="#">Dropdown menu editable two</option>
+							<option  class="text-icon-gray" value="#">Dropdown menu editable three</option>
+							<option  class="text-icon-gray" value="#">Dropdown menu editable four</option> 
+						</select>
+						</div>
+					</div>	
+
+
+				</div>
+
+<div class="pt-20 pb-20 "><div class="border-space w-100"></div></div>
+
+
+				<div class="row right-content-menus ">
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 m-0 p-0 f-s-14 text-icon-gray pl-15">
+						<label for="survei-name ">Enter Question</label>
+					</div>
+					<div  class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+						<textarea  class="w-100 p-10 text-icon-gray input input-action" rows="3" maxlength="200" id="textarea"></textarea>
+					</div>	
+				</div>
+
+
+				<div class="answer row pt-10 pb pl-15">
+					<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2 m-0 p-0 f-s-14 text-icon-gray">
+						<span>Answer!</span>
+					</div>
+				</div>
+
+				<div class="answer-from-question row pt-10 pb-10" class="answer-now" id="answer-1">
+					<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2 pt-10">
+						<label class="input-radio pull-right" id="radio-action-1">
+								<input type="checkbox" name="radio-o" id="radio-1" class="input" >
+							<span class="radio-active input-action-input radio "   >
+								<strong></strong>
+							</span>
+						</label>
+						
+						<label class="input-check pull-right" id="check-action-1">
+							<input type="checkbox" name="#" id="check-1" class="pull-right">
+							<span class="check-active check " >
+								<i class="ion-checkmark-round"></i>
+							</span>
+						</label>
+					</div>
+					<div  class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					 <input type="text" name="" class="input bg-white p-10 w-100 text-icon-gray input-action" id="text-1">
+					</div>	
+				</div>
+				<div class="answer-from-question row pt-10 pb-10" class="answer-now" id="answer-2">
+					<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2 pt-10">
+						<label class="input-radio pull-right"  id="radio-action-2">
+							<input type="checkbox" name="radio-o" id="radio-2" class="input" >
+							<span class="radio-active radio" >
+								<strong></strong>
+							</span>
+						</label>
+						<label class="input-check pull-right" id="check-action-2">
+							<input type="checkbox" name="#"  class="pull-right check opt2 input-action-input" id="check-2">
+							<span class="check-active  check " >
+								<i class="ion-checkmark-round"></i>
+							</span>
+						</label>
+					</div>
+					<div  class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					 <input type="text" name="" class="input bg-white p-10 w-100 text-icon-gray input-action" id="text-2">
+					</div>	
+				</div>
+				<div class="answer-from-question row pt-10 pb-10" class="answer-now" id="answer-3">
+					<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2 pt-10">
+						<label class="input-radio pull-right"  id="radio-action-3">
+						<input type="checkbox" name="radio-o" id="radio-3" class="input" >
+							<span class="radio-active radio" >
+								<strong></strong>
+							</span>
+						</label>
+						<label class="input-check pull-right"  id="check-action-3">
+							<input type="checkbox" name="#" id="check-3" class="pull-right check opt3 input-action" >
+							<span class="check-active  check " >
+								<i class="ion-checkmark-round"></i>
+							</span>
+						</label>
+					</div>
+					<div  class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					 <input type="text" name="" class="input bg-white p-10 w-100 text-icon-gray input-action" id="text-3">
+					</div>	
+				</div>
+				<div class="answer-from-question row pt-10 pb-10" class="answer-now" id="answer-4">
+					<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2 pt-10" id="">
+						<label class="input-radio pull-right" id="radio-action-4">
+						<input type="checkbox" name="radio-o" id="radio-4" class="input">
+							<span class="radio-active radio">
+								<strong></strong>
+							</span>
+						</label>
+						<label class="input-check pull-right" id="check-action-4" >
+							<input type="checkbox" name="#" id="check-4" class="pull-right check opt4 input-action">
+							<span class="check-active  check " >
+								<i class="ion-checkmark-round"></i>
+							</span>
+						</label>
+					</div>
+					<div  class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					 <input type="text" name="" class="input bg-white p-10 w-100 text-icon-gray input-action" id="text-4">
+					</div>	
+				</div>
+				<div class="answer-from-question row pt-10 pb-10  answer-5" id="answer-5">
+					<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2 pt-10">
+						<label class="input-radio pull-right"  id="radio-action-5">
+							<input type="checkbox" name="radio-o" id="radio-5" class="input" >
+							<span class="radio-active radio" >
+								<strong></strong>
+							</span>
+						</label>
+						<label class="input-check pull-right" id="check-action-5">
+							<input type="checkbox" name="#" id="check-5" class="pull-right check opt5 input-action">
+							<span class="check-active  check " >
+								<i class="ion-checkmark-round"></i>
+							</span>
+						</label>
+					</div>
+					<div  class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					 <input type="text" name="" class="input bg-white p-10 w-100 text-icon-gray input-action" id="text-5">
+					</div>	
+				</div>
+				<div class="answer-from-question row pt-10 pb-10  answer-6" id="answer-6">
+					<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2 pt-10">
+						<label class="input-radio pull-right" id="radio-action-6" >
+						<input type="checkbox" name="radio-o" id="radio-6"  class="input">
+							<span class="radio-active radio" >
+								<strong></strong>
+							</span>
+						</label>
+						<label class="input-check pull-right" id="check-action-6" >
+							<input type="checkbox" name="#" id="check-6" class="pull-right check opt6 input-action">
+							<span class="check-active input-input-six input-action" >
+								<i class="ion-checkmark-round"></i> 
+							</span>
+						</label>
+					</div>
+					<div  class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+					 <input type="text" name="" class=" bg-white p-10 w-100 text-icon-gray input input-action" id="text-6">
+				</div>
+
+					</div>
+
+				
+
+
+					<div class="answer-from-question row pt-10 pb-10  " id="crud">
+					<div class="col-lg-2 col-sm-2 col-md-2 col-xs-2 pt-10">
+						
+					</div>
+					<div  class="col-lg-3 col-md-3 col-sm-3 col-xs-4">
+						<!-----------this for remove-------------->
+						<button type="button"  class="btn btn-violet p-05 white border pr-20 text-center pl-10  fs-14 border-radius  delete w-100" id="delete">Delete</button>
+					</div>
+					<div  class="col-lg-3 col-md-3 col-sm-5 col-xs-4 edited" name="`		">
+						<!-----------this for edit-------------->
+						<button type="button"   class="btn btn-violet p-05 white border pr-20 text-center pl-10  fs-14 border-radius  edit w-100 edit" id="edit" toggle="edit" >Edit</button>
+					</div>
+					<div  class="col-lg-3 col-md-3 col-sm-5 col-xs-4 updated" >
+						<!-----------this for update-------------->
+						<button type="button" class="btn btn-violet p-05 white border pr-20 text-center pl-10  fs-14 border-radius  update w-100" id="update">Update</button>
+					</div>
+					
+
+					
+				</div>
+
+
+
+
+
+
+				
+			</div>
+			</div>
+
+
+		<div id="canvas"></div>
+
+			<div class="row pt-30">
+				<input type="checkbox" class="checkbox-publish" name="" id="delete">
+					<div class="action-button col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2 " id="new-option-u">
+							<button class=" btn-violet white  pt-05 pb-05 pr-05 pl-05 border-radius button new-1 new-option-1" id="new-option-1">New option <i class="ion-plus-round "></i></button>
+
+							<button class=" btn-violet white  pt-05 pb-05 pr-05 pl-05 border-radius button new-option-1 new-2 new-option-2" id="new-option-2" >New option <i class="ion-plus-round "></i></button>
+					</div>
+					<div class="action-button col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2   newquestion" id="newquestion">
+						<button class=" btn-violet white  pt-05 pb-05 pr-05 pl-05 border-radius button   new-question " id="newquestion-b">
+						new question<i class="ion-plus-round ml-10 "></i></button>
+
+						
+							
+					</div>
+
+					
+
+					<div class="action-button  " id="publish">
+							<button class=" btn-violet-outline text-violet  pt-05 pb-05 pr-10 pl-10 border-radius button publish" id="publish-u">Publish</button>
+					</div>
+
+					<div class="action-button  ">		
+							<button class=" btn-violet-outline text-violet  pt-05 pb-05 pr-10 pl-10 border-radius button  save" id="save">Save</button>
+					</div>
+
+
+					
+				</div>
+
+
+
+
+
+
+				<div class="logout-menu pt-60">
+					<button id="Logout" class="btn w-100 text-center btn-violet white border-radius Logout-beta" >Logout</button>
+				</div>
+			  </div>
+		
+	</div>
+</div>
+</section >
+
+</body>
+
+<script type="text/javascript" src="asset/js/action.min.js"></script> 
+	<!--	<script type="text/javascript" src="asset/js/action.js"></script>  -->
+
+
+</html>
+
