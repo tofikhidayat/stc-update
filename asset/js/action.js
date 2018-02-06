@@ -333,6 +333,7 @@ else if ($("#pick-multiple-action").prop('checked') )
 	$("#check-action-1").removeAttr('id');
 	$("#check-action-2").removeAttr('id');
 	$("#check-action-3").removeAttr('id');
+	
 	$("#check-action-4").removeAttr('id');
 	$("#check-action-5").removeAttr('id');
 	$("#check-action-6").removeAttr('id');
